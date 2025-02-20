@@ -30,3 +30,7 @@ The application uses **MongoDB** as the database and provides a set of **RESTful
 
 2. Install Dependencies:
       - npm install
+
+3. Start Server
+      - npm run dev
+      - The API will run on http://localhost:3001.
