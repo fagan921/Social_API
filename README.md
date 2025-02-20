@@ -1,29 +1,10 @@
-# **Social Network API**
+# Social Network API
 
-## **Description**
-This project is a **Social Network API** built using **MongoDB**, **Express.js**, and **Mongoose ODM**. It allows users to **create profiles, share thoughts, react to friends' thoughts, and manage their friend lists**.
+## Description
+A backend API for a social network web application where users can share thoughts, react to thoughts, and manage a friend list. Built using **MongoDB**, **Express.js**, and **Mongoose**.
 
-The application uses **MongoDB** as the database and provides a set of **RESTful API endpoints** for managing users, thoughts, reactions, and friendships.
-
----
-
-## **Table of Contents**
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Routes](#api-routes)
-  - [User Routes](#user-routes)
-  - [Thought Routes](#thought-routes)
-  - [Reaction Routes](#reaction-routes)
-  - [Friend Routes](#friend-routes)
-- [Demo](#demo)
-- [Technologies Used](#technologies-used)
-- [Walkthrough Video](#walkthrough-video)
-- [License](#license)
-
----
-
-## **Installation**
-1. **Clone the Repository**:
+## Installation
+1. Clone the repository:  
    ```bash
    git clone https://github.com/your-username/social-network-api.git
    cd social-network-api
@@ -34,3 +15,31 @@ The application uses **MongoDB** as the database and provides a set of **RESTful
 3. Start Server
       - npm run dev
       - The API will run on http://localhost:3001.
+
+## API Routes
+
+Users
+	•	GET /api/users - Get all users
+	•	GET /api/users/:userId - Get a single user
+	•	POST /api/users - Create a user
+	•	PUT /api/users/:userId - Update a user
+	•	DELETE /api/users/:userId - Delete a user
+
+Thoughts
+	•	GET /api/thoughts - Get all thoughts
+	•	GET /api/thoughts/:thoughtId - Get a single thought
+	•	POST /api/thoughts - Create a thought
+	•	PUT /api/thoughts/:thoughtId - Update a thought
+	•	DELETE /api/thoughts/:thoughtId - Delete a thought
+
+Reactions
+	•	POST /api/thoughts/:thoughtId/reactions - Add a reaction
+	•	DELETE /api/thoughts/:thoughtId/reactions/:reactionId - Remove a reaction
+
+Friends
+	•	POST /api/users/:userId/friends/:friendId - Add a friend
+	•	DELETE /api/users/:userId/friends/:friendId - Remove a friend
+
+License
+
+This project is licensed under the MIT License.
