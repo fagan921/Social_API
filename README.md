@@ -29,4 +29,4 @@ The application uses **MongoDB** as the database and provides a set of **RESTful
    cd social-network-api
 
 2. **Install Dependencies:
-      npm install
+      - npm install
