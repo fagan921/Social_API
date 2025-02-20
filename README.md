@@ -28,5 +28,5 @@ The application uses **MongoDB** as the database and provides a set of **RESTful
    git clone https://github.com/your-username/social-network-api.git
    cd social-network-api
 
-2. **Install Dependencies:
+2. Install Dependencies:
       - npm install
